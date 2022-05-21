@@ -12,12 +12,14 @@ while True:
 #10.7
 ###########
 testfiles = ['cats.txt','dogs.txt']
-#10.8
+#10.8- 9
 for testfile in testfiles:
     try:
         with open(testfile, 'r') as file:
             workfile=file.readlines()
     except FileNotFoundError:
         print(f"Файл {testfile} не найден!")
+        pass
     else:
         print (workfile)
+#10.9
