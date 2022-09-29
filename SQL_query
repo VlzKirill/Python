@@ -1,0 +1,23 @@
+import pypyodbc
+
+mySQLserver = 'localhost\SQLEXPRESS'
+myDataBase  = 'TestDB'
+myUserName  = 'User'
+myPassword  = '12345'
+
+connection = pypyodbc.connect('Driver={SQL Server};'
+                              'Server=' + mySQLserver + ';'
+                              'Database=' + myDataBase + ';'
+                              'uid=' + myUserName + ';'
+                              'pwd=' + myPassword + ';')
+                              
+cursor = pypyodbc.cursor()
+
+# CompanyName, ContactName, country - столбцы в таблице
+mySQLQuery = ("""
+              SELECT CompanyName, ContactName, country
+              FROM dbo.Customers
+              WHERE country = 'Canada'
+              """)
+              
+cursor.execute( mySQLQuery )
