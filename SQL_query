@@ -17,7 +17,12 @@ cursor = pypyodbc.cursor()
 mySQLQuery = ("""
               SELECT CompanyName, ContactName, country
               FROM dbo.Customers
-              WHERE country = 'Canada'
+              WHERE country = 'Russia'
               """)
               
 cursor.execute( mySQLQuery )
+result = cursor.fetchall()
+
+connection.close()
+
+print (result)
