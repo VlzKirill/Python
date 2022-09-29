@@ -25,4 +25,12 @@ result = cursor.fetchall()
 
 connection.close()
 
+for row in result:
+  companyName = row[0]
+  contactName = row[1]
+  countryName = row[2]
+  print ('Company: '+companyName)
+  print ('Contact: '+contactName)
+  print ('Country: '+countryName)
+  
 print (result)
