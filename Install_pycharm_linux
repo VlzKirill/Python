@@ -1,0 +1,10 @@
+wget https://download.jetbrains.com/python...
+
+2. Распаковать файл
+tar -xvf   pycharm-community-2016.3.tar.gz
+
+3. Перейти в директорию где запускаемый скрипт
+cd pycharm-community-2016.3/bin
+
+4. Запустить PyCharm из директории где лежит PyCharm 
+./pycharm.sh
