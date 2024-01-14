@@ -2,6 +2,10 @@
 PyInstaller тут -  http://www.pyinstaller.org/
 PyWin32  тут -   https://sourceforge.net/projects/pywi...
 
+
+pip install -U pyinstaller
+python -m pip install --upgrade pywin32
+
 Установка модулей/библиотек из коммандной строки:
 pip install pefile
 pip install pywin32
