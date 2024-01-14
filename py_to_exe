@@ -2,7 +2,8 @@
 Установить компоненты: 
 pip install -U pyinstaller pywin32 pefile
 Перейти к исходникам, выполнить команду в powershell т имени администратора:
-pyinstaller    HelloWorld.py   --onefile
+ --noconsole - если приложение оконное, не консольное
+pyinstaller    HelloWorld.py   --onefile  --noconsole
 
 
 Старая инструкция:
