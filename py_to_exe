@@ -1,3 +1,11 @@
+Новая инструкция:
+Установить компоненты: 
+pip install -U pyinstaller pywin32 pefile
+Перейти к исходникам, выполнить команду в powershell т имени администратора:
+pyinstaller    HelloWorld.py   --onefile
+
+
+Старая инструкция:
 Скачать:
 PyInstaller тут -  http://www.pyinstaller.org/
 PyWin32  тут -   https://sourceforge.net/projects/pywi...
