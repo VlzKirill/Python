@@ -3,7 +3,7 @@
 pip install -U pyinstaller pywin32 pefile
 Перейти к исходникам, выполнить команду в powershell т имени администратора:
  --noconsole - если приложение оконное, не консольное
-pyinstaller    HelloWorld.py   --onefile  --noconsole
+pyinstaller.exe --onefile --windowed --icon=app.ico app.py
 
 
 Старая инструкция:
