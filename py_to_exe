@@ -1,6 +1,7 @@
 Новая инструкция:
 Установить компоненты: 
-pip install -U pyinstaller pywin32 pefile
+pip install pyinstaller==5.13.2 pywin32 pefile
+
 Перейти к исходникам, выполнить команду в powershell т имени администратора:
  --noconsole - если приложение оконное, не консольное
 pyinstaller.exe --onefile --windowed --icon=app.ico app.py
